@@ -1,0 +1,74 @@
+1) Crie uma função que calcule o índice de massa corporal (IMC) de uma pessoa, a partir de sua altura, em metros, e peso, em quilogramas, que serão recebidos como parâmetro.
+
+    function calculo(peso, altura){
+    let imc = peso / (altura * altura)
+    return imc;
+    }
+
+    let valor = calculo(60, 1.70)
+    console.log(valor);
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
+
+    function calculoFatorial(numero) {
+        if (numero <= 1) {
+            return 1;
+        } else {
+        return numero * calculoFatorial(numero - 1)
+        }
+    }
+    let resultado = calculoFatorial(5)
+    console.log(resultado)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3)Crie uma função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. Para isso, considere a cotação do dólar igual a R$4,80.
+
+    function converterMoney(real){
+        let dolar = 5;
+        return real / dolar;
+    }
+    let valor = parseInt(prompt("Digite o valor em real: "))
+    console.log(`O valor R$ ${valor}, em dólar vale $${converterMoney(valor)} `)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4)Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
+
+    function medirArea(base, altura){
+         let area;
+        return area =  base * altura;
+    }
+
+    console.log (medirArea(100, 70))
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+5)Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14.
+
+    function areaCirculo(raio){
+        let pi = 3.14;
+        return pi * (Math.pow(raio,2))
+    }
+
+    console.log(areaCirculo(100) )
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+6)Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
+
+function tabuada(numero){
+    for(i = 1; i <= 10; i++){
+        let valor = numero * i;
+        console.log(`${numero} X ${i} = ${valor}`)
+    } 
+}
+tabuada(2)
+
+
